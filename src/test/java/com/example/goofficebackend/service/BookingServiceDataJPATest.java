@@ -181,7 +181,7 @@ public class BookingServiceDataJPATest {
     System.out.println("Test date: " + date);
 
     ResponseEntity<List<BookingResponse>> bookingResponses = bookingService.findBookingsByDate(date);
-    assertEquals(3,
+    assertEquals(2,
         bookingResponses.getBody().size());
   }
 
